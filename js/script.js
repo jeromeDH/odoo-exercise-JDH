@@ -1,24 +1,32 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const accordionButtons = document.querySelectorAll('.accordion-button');
+document.addEventListener("DOMContentLoaded", function () {
+  const accordion = document.querySelector(".accordion");
 
-  accordionButtons.forEach((button) => {
-    const icon = button.querySelector('.icon-toggle');
+  if (!accordion) return;
 
-    // Ensure icon exists (if you have multiple buttons with icons)
+  // Listen for when an accordion item is shown
+  accordion.addEventListener("show.bs.collapse", function (e) {
+    const button = e.target
+      .previousElementSibling
+      .querySelector(".accordion-button");
+    const icon = button.querySelector(".icon-toggle");
+
     if (icon) {
-      // Update icons when collapsing/expanding
-      button.addEventListener('click', () => {
-        // Wait for Bootstrap collapse animation to finish
-        setTimeout(() => {
-          if (button.classList.contains('collapsed')) {
-            icon.classList.remove('bi-dash-lg');
-            icon.classList.add('bi-plus-lg');
-          } else {
-            icon.classList.remove('bi-plus-lg');
-            icon.classList.add('bi-dash-lg');
-          }
-        }, 200);
-      });
+      icon.classList.remove("bi-plus-lg");
+      icon.classList.add("bi-dash-lg");
+    }
+  });
+
+  // Listen for when an accordion item is hidden
+  accordion.addEventListener("hide.bs.collapse", function (e) {
+    const button = e.target
+      .previousElementSibling
+      .querySelector(".accordion-button");
+    const icon = button.querySelector(".icon-toggle");
+
+    if (icon) {
+      icon.classList.remove("bi-dash-lg");
+      icon.classList.add("bi-plus-lg");
     }
   });
 });
+
