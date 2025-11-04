@@ -197,7 +197,7 @@ header {
     .bg-photo {
       width: 100%;
       aspect-ratio: 1 / 1;
-      background-image: url(/assets/person_03.jpg);
+      background-image: url(../assets/person_03.jpg);
       background-position: center center;
       background-size: cover;
     }
@@ -329,12 +329,12 @@ header {
     &--left {
       left: calc(50% - 80px);
       transform: translate(-50%, -50%);
-      background: url('/assets/curve-left.svg') no-repeat center/contain;
+      background: url('../assets/curve-left.svg') no-repeat center/contain;
     }
     &--right {
       right: calc(50% - 80px);
       transform: translate(50%, -50%);
-      background: url('/assets/curve-right.svg') no-repeat center/contain;
+      background: url('../assets/curve-right.svg') no-repeat center/contain;
     }
   }
 
@@ -356,7 +356,7 @@ header {
 
     .video-player-floating {
       position: absolute;
-      background-image: url(/assets/img_01.jpg);
+      background-image: url(../assets/img_01.jpg);
       background-position: center center;
       background-size: cover;
       width: 350px;
@@ -467,10 +467,10 @@ header {
     position: relative;
 
     &--1 {
-      background-image: url(/assets/img_02.jpg);
+      background-image: url(../assets/img_02.jpg);
     }
     &--2 {
-      background-image: url(/assets/img_03.jpg);
+      background-image: url(../assets/img_03.jpg);
     }
 
     button {
