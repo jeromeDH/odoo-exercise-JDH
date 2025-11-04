@@ -1,0 +1,16 @@
+# Node / dev
+node_modules/
+dist/
+.DS_Store
+.vscode/
+*.log
+.env
+*.env
+.idea/
+
+# macOS
+.DS_Store
+
+# build artifacts
+*.min.css
+*.min.js
