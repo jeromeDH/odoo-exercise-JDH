@@ -1,6 +1,17 @@
 @import 'variables';
 @import 'mixins';
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
   color: $font-color;
@@ -85,11 +96,6 @@ header {
       &.active {
         color: $font-color !important;
       }
-    }
-
-    .right-cta {
-      display: flex;
-      align-items: center;
     }
   
     // Make hamburger lines lighter on dark bg
