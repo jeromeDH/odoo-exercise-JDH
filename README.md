@@ -10,7 +10,7 @@ The goal was to reproduce a provided mock-up while ensuring responsiveness, acce
 - **SCSS** — modular and maintainable custom styles
 - **Bootstrap Icons** — lightweight icon system
 - **Google Fonts** — custom typography to use Nunito Sans (the closest I found to your mockup)
-- **Vanilla JavaScript** — interactive components (accordion, navbar toggle)
+- **Vanilla JavaScript** — interactive components (accordion)
 
 ---
 
